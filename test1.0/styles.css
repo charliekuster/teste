@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.filter-menu {
+    width: 200px;
+    margin: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.filter-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-section li {
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    cursor: pointer;
+}
+
+.filter-section li:hover {
+    background-color: #f1f1f1;
+}
