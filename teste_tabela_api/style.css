@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px 60px 5px 60px;
+    font-size: 12px;
+    text-align: left;
+  }
+
+
+  
+  thead tr:first-child th {
+    background-color: #007acc; /* Cor de fundo para a primeira linha do cabeçalho */
+    color: #fff;
+  }
+  
+  thead tr:nth-child(2) th {
+    background-color: #3399ff; /* Cor de fundo para a segunda linha do cabeçalho */
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas ímpares */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Cor de fundo para linhas pares */
+  }
