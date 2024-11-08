@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th colspan="8">Bactéria</th>
+            </tr>
+            <tr>
+                <th>.fast</th>
+                <th>.gbk</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+    <script>
+        var RegisterArray = [
+            {'fast' : 'fast1', 'gbk' : 'gbk1'},
+            {'fast' : 'fast2', 'gbk' : 'gbk2'}
+        ];
+
+        buildTable(RegisterArray);
+
+        function buildTable(ArraydeRegistro){
+            const tabeladeregistros = document.getElementById("#myTable");
+            tabeladeregistros.innerHTML = ArraydeRegistro.map(item => `
+                <tr>
+                    <td>${ArraydeRegistro[i].fast}</td>
+                    <td>${ArraydeRegistro[i].gbk}</td>
+                </tr>`).join("");
+        }
+    </script>
+</body>
+</html>
