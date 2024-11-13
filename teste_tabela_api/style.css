@@ -9,8 +9,6 @@ table {
     font-size: 12px;
     text-align: left;
   }
-
-
   
   thead tr:first-child th {
     background-color: #007acc; /* Cor de fundo para a primeira linha do cabeçalho */

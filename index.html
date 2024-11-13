@@ -4,38 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cabeca.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th colspan="8">Bactéria</th>
-            </tr>
-            <tr>
-                <th>.fast</th>
-                <th>.gbk</th>
-            </tr>
-        </thead>
-        <tbody id="myTable">
 
-        </tbody>
-    </table>
-    <script>
-        var RegisterArray = [
-            {'fast' : 'fast1', 'gbk' : 'gbk1'},
-            {'fast' : 'fast2', 'gbk' : 'gbk2'}
-        ];
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="/Imagens/Logos/Site/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/genomes/indexGenomes.html">GENOMES</a></li>
+                <li><a href="/upload/indexUpload.html">UPLOAD</a></li>
+                <li><a href="/documentation/indexDoc.html">DOCUMENTATION</a></li>
+                <li><a href="/about/indexAbout.html"> ABOUT</a> </li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <a href="">Log in</a>
+            <span>|</span>
+            <a href="">Sign up</a>
+        </div>
+    </header>
 
-        buildTable(RegisterArray);
 
-        function buildTable(ArraydeRegistro){
-            const tabeladeregistros = document.getElementById("#myTable");
-            tabeladeregistros.innerHTML = ArraydeRegistro.map(item => `
-                <tr>
-                    <td>${ArraydeRegistro[i].fast}</td>
-                    <td>${ArraydeRegistro[i].gbk}</td>
-                </tr>`).join("");
-        }
-    </script>
+    <main>
+        <div class="contTabela">
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="8">Bactéria</th>
+                            <th colspan="10">Sample data</th>
+                            <th colspan="9">Sequencing data</th>
+                        </tr>
+                        <tr>
+                            <th>.fast</th>
+                            <th>.gbk</th>
+                            <th>ID LAMC</th>
+                            <th>ID</th>
+                            <th>Organism</th>
+                            <th>MLST</th>
+                            <th>Kapsule locus</th>
+                            <th>Carbapenem resistance</th>
+                            <th>Type of sample</th>
+                            <th>Host</th>
+                            <th>Isolation source</th>
+                            <th>Collection date</th>
+                            <th>Geographic location</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>sequenced</th>
+                            <th>From</th>
+                            <th>Biobank</th>
+                            <th>Biobank location</th>
+                            <th>Sequencing platform 1</th>
+                            <th>Sequencing platform 2 (hybrid)</th>
+                            <th>Assembly method</th>
+                            <th>Version or date program was run (Assembly)</th>
+                            <th>Annotation method</th>
+                            <th>Version or date program was run</th>
+                            <th>NCBI Accession Number</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="main.js"></script>
+
+        <div class="logo-section">
+            <img src="/Imagens/Logos/logos_unifesp/Unifesp_completa_policromia_RGB.png" alt="UNIFESP Logo">
+            <img src="/Imagens/Logos/Logo_fapesp/logo-cepid-removebg.png" alt="FAPESP Logo">
+            <img src="/Imagens/Logos/Logo_fapesp/logo_fapesp.png" alt="CEPID B3 Logo">
+            <img src="/Imagens/Logos/Logo_fapesp/20_preview_rev_1.png" alt="">
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>© 2024 Klebsiella Database. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

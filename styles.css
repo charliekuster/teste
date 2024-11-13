@@ -1,0 +1,73 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Estilos da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8px;
+}
+
+/* Cabeçalhos */
+th {
+  background-color: #005f99;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+thead tr:first-child th {
+  background-color: #003f5c;
+  font-size: 14px;
+}
+
+thead tr:nth-child(2) th {
+  background-color: #007acc;
+}
+
+/* Linhas da tabela */
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Contêiner com rolagem */
+.contTabela {
+  width: 1050px;
+  height: 538px; /* Define a altura máxima */
+  overflow: hidden;
+}
+
+.tabela {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Rolagem vertical */
+  overflow-x: auto; /* Rolagem horizontal */
+}
+
+/* Ajuste para colunas estreitas */
+th, td {
+  min-width: 100px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Melhor visibilidade das células com conteúdo longo */
+td[colspan] {
+  font-weight: bold;
+  color: #333;
+}
